@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind v3</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="fixed top-0 left-0 z-40 flex items-center justify-between w-full h-16 px-6 text-sm font-medium text-gray-800 bg-white border-b border-gray-200">
+        <h4 class="text-2xl font-bold text-green-600">Sondage</h4>
+        <div class="relative flex items-center">
+            <button type="button" class="flex rounded-full" type="button">
+                <span class="sr-only">User menu</span>
+                <img class="w-10 h-10 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPnE_fy9lLMRP5DLYLnGN0LRLzZOiEpMrU4g&usqp=CAU" alt="user photo">
+            </button>
+            <!-- Dropdown menu -->
+            <div class="absolute right-0 z-30 hidden bg-white border border-gray-200 divide-y divide-gray-100 rounded-lg top-12 w-72">
+                <div class="px-4 py-3 text-center">
+                    <span class="block text-sm font-semibold text-gray-800">Bonnie Green</span>
+                    <span class="block mb-3 text-sm text-gray-400">name@flowbite.com</span>
+                    <span class="bg-red-100 text-red-600 text-xs font-semibold px-2.5 py-1 rounded-lg">Beginner</span>
+                </div>
+                <ul class="py-1">
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-6 pt-24 pb-16 m-auto md:w-4/5 lg:w-3/4">
+        <div class="m-auto xl:w-3/4">
+            
+            <div class="py-8 border-b border-gray-200">
+                <div class="grid grid-cols-10 gap-4">
+                    <button class="flex items-center justify-center p-2 font-semisemibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">1</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">2</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">3</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">4</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 border border-green-600 rounded-lg bg-green-50 hover:bg-green-50 focus:outline-none">5</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">6</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">7</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">8</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">9</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">10</button>
+                </div> 
+            </div>
+            
+            <div class="py-8 border-b border-gray-200">
+                <div class="grid grid-cols-6 gap-4">
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">0-1</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">1-5</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">5-20</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">20-50</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 border border-green-600 rounded-lg bg-green-50 hover:bg-green-50 focus:outline-none">50-100</button>
+                    <button class="flex items-center justify-center p-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">100+</button>
+                </div> 
+            </div>
+
+            <div class="py-8 border-b border-gray-200">
+                <div class="flex flex-wrap items-center gap-4">
+                    <button class="flex items-center justify-center py-2 px-8 font-semibold text-gray-800 border border-green-600 rounded-lg bg-green-50 hover:bg-green-50 focus:outline-none">
+                        <svg class="h-5 w-5 mr-2"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />  <circle cx="12" cy="7" r="4" /></svg>
+                        Male
+                    </button>
+                    <button class="flex items-center justify-center py-2 px-8 font-semibold text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">
+                        <svg class="h-5 w-5 mr-2"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />  <circle cx="12" cy="7" r="4" /></svg>
+                        Female
+                    </button>
+                </div> 
+            </div>
+            
+            <div class="py-8 border-b border-gray-200">
+                <div class="grid grid-cols-4 gap-4">
+                    <button class="flex items-center justify-center py-2 px-8 font-semibold text-sm text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">Vegetan</button>
+                    <button class="flex items-center justify-center py-2 px-8 font-semibold text-sm text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">Nourriture</button>
+                    <button class="flex items-center justify-center py-2 px-8 font-semibold text-sm text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">Pascatarian</button>
+                    <button class="flex items-center justify-center py-2 px-8 font-semibold text-sm text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">Vegetan</button>
+                    <button class="flex items-center justify-center py-2 px-8 font-semibold text-sm text-gray-800 border border-green-600 rounded-lg bg-green-50 hover:bg-green-50 focus:outline-none">Alimentation</button>
+                    <button class="flex items-center justify-center py-2 px-8 font-semibold text-sm text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">Betails</button>
+                    <button class="flex items-center justify-center py-2 px-8 font-semibold text-sm text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">Vegetan</button>
+                    <button class="flex items-center justify-center py-2 px-8 font-semibold text-sm text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">Nourriture</button>
+                </div> 
+            </div>
+            
+            <div class="py-8 border-b border-gray-200">
+                <div class="grid grid-cols-4 gap-4">
+                    <button class="flex items-center justify-center p-8 font-semibold text-sm text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">
+                        <img src="images/emoji/1.png" alt=""> 
+                    </button>
+                    <button class="flex items-center justify-center p-8 font-semibold text-sm text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">
+                        <img src="images/emoji/2.png" alt=""> 
+                    </button>
+                    <button class="flex items-center justify-center p-8 font-semibold text-sm text-gray-800 bg-green-50 border border-green-600 rounded-lg hover:bg-green-50 focus:outline-none">
+                        <img src="images/emoji/3.png" alt=""> 
+                    </button>
+                    <button class="flex items-center justify-center p-8 font-semibold text-sm text-gray-800 bg-white border border-gray-200 rounded-lg hover:bg-green-50 focus:outline-none">
+                        <img src="images/emoji/4.png" alt=""> 
+                    </button>
+                </div> 
+            </div>
+            
+            <div class="py-8 border-b border-gray-200">
+                <div class="grid grid-cols-3 gap-4">
+                    <button class="relative flex flex-col items-center justify-center px-4 py-8 bg-white border border-gray-200 rounded-lg focus:outline-none">
+                        <svg class="w-8 h-8 text-green-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/>
+                        </svg>                  
+                        <span class="mb-1 text-sm font-semibold">You score will be shown</span>
+                        <span class="text-sm">after the survey</span>
+                    </button>
+                    <button class="relative flex flex-col items-center justify-center px-4 py-8 border border-green-600 rounded-lg bg-green-50">
+                        <span class="absolute top-1.5 right-1.5 bg-green-600 text-white text-sm font-semibold inline-flex items-center p-1.5 rounded-full dark:bg-blue-200 dark:text-blue-800">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        </span>
+                        <svg class="w-8 h-8 text-green-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/>
+                        </svg>                
+                        <span class="mb-1 text-sm font-semibold">You score will be shown</span>
+                        <span class="text-sm">after the survey</span>
+                    </button>
+                    <button class="relative flex flex-col items-center justify-center px-4 py-8 bg-white border border-gray-200 rounded-lg focus:outline-none">
+                        <svg class="w-8 h-8 text-green-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/>
+                        </svg>               
+                        <span class="mb-1 text-sm font-semibold">You score will be shown</span>
+                        <span class="text-sm">after the survey</span>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

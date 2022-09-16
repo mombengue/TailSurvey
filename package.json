@@ -1,0 +1,23 @@
+{
+  "name": "survey",
+  "version": "1.0.0",
+  "description": "Tailwind template Survey",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwind build -i ./src/css/input.css -o ./dist/output.css",
+    "watch": "tailwind build -i ./src/css/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [
+    "Alpine",
+    "Tailwind",
+    "Survey"
+  ],
+  "author": "Mamadou MBENGUE",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "alpinejs": "^3.9.6"
+  }
+}
